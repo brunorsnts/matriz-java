@@ -59,3 +59,27 @@ Esta é uma maneira mais simples se você prefere usar um ambiente de desenvolvi
 3.  **Execute a classe principal**:
    - Encontre o arquivo `Program.java` dentro da estrutura do projeto (geralmente em `src/application/Program.java`).
    - Clique com o botão direito sobre ele e escolha a opção para executar o método `main` (algo como "Run As > Java Application" ou "Run 'Program.main()'").
+
+## 🖼️ Demonstração de Uso
+
+Abaixo está um exemplo de como o programa funciona no terminal, passo a passo.
+
+1.  **Primeiro, o programa solicita o número de linhas da matriz:**
+
+    ![Entrada do número de linhas](./assets/01-input-linhas.png)
+
+2.  **Em seguida, o número de colunas:**
+
+    ![Entrada do número de colunas](./assets/02-input-colunas.png)
+
+3.  **Depois, pede os elementos para preencher a matriz, um por um:**
+
+    ![Entrada dos elementos da matriz](./assets/03-input-matriz.png)
+
+4.  **Então, solicita o número que deve ser buscado:**
+
+    ![Entrada do número a ser buscado](./assets/04-input-busca.png)
+
+5.  **Finalmente, o programa exibe a posição de cada ocorrência e seus vizinhos:**
+
+    ![Resultado da busca na matriz](./assets/05-resultado.png)
