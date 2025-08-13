@@ -83,7 +83,7 @@ Abaixo está um exemplo de como o programa funciona no terminal, passo a passo.
 5.  **Finalmente, o programa exibe a posição de cada ocorrência e seus vizinhos:**
 
 <details>
-    <summary>Clique para ver o resultado completo</summary>
+  <summary>Clique para ver o resultado completo</summary>
 
-    ![Resultado da busca na matriz](./assets/05-resultado.png)
+![Resultado da busca na matriz](./assets/05-resultado.png)
 </details>
