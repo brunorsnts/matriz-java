@@ -22,22 +22,40 @@ O programa solicita ao usuário as dimensões de uma matriz, seus elementos e, e
 
 ## 🚀 Como Executar o Projeto
 
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/brunorsnts/matriz-java.git](https://github.com/brunorsnts/matriz-java.git)
+Existem duas maneiras de executar este projeto: via terminal (recomendado para entender o processo de compilação) ou diretamente por uma IDE.
 
-Abra o projeto:
+### Método 1: Via Terminal (Linha de Comando)
 
-    Abra o IntelliJ IDEA.
+Este método requer que você tenha o **Java Development Kit (JDK)** instalado e configurado nas variáveis de ambiente do seu sistema.
 
-    Selecione "Open" e navegue até a pasta do projeto clonado.
+1.  **Clone o repositório** e entre na pasta do projeto:
+    ```bash
+    git clone https://github.com/brunorsnts/matriz-java.git
+    cd matriz-java
+    ```
 
-Execute o programa:
+2.  **Compile o código-fonte:**
+    Este comando irá compilar todos os arquivos `.java` da pasta `src` e colocar os arquivos `.class` compilados em uma nova pasta chamada `bin`.
+    ```bash
+    javac -d bin src/application/Program.java src/entities/*.java
+    ```
 
-    Navegue até o arquivo src/application/Program.java.
-
-    Clique com o botão direito no arquivo e selecione "Run 'Program.main()'".
-
-Siga as instruções no console:
-
+3.  **Execute o programa:**
+    Agora, com o projeto compilado, execute o programa. O comando `-cp bin` diz ao Java para procurar as classes na pasta `bin`. Note que precisamos usar o nome completo da classe principal, incluindo seu pacote (`application.Program`).
+    ```bash
+    java -cp bin application.Program
+    ```
+4.  **Siga as instruções no console:**
     O programa solicitará que você insira as dimensões da matriz, os seus valores e o número a ser encontrado.
+
+---
+### Método 2: Via uma IDE Java (Eclipse, IntelliJ, VS Code, etc.)
+
+Esta é uma maneira mais simples se você prefere usar um ambiente de desenvolvimento integrado.
+
+1.  **Clone o repositório** (se ainda não o fez).
+2.  **Abra ou importe o projeto na sua IDE de preferência**:
+   - Use a opção "Open Project", "Import Project" ou similar da sua IDE e selecione a pasta do projeto que você clonou.
+3.  **Execute a classe principal**:
+   - Encontre o arquivo `Program.java` dentro da estrutura do projeto (geralmente em `src/application/Program.java`).
+   - Clique com o botão direito sobre ele e escolha a opção para executar o método `main` (algo como "Run As > Java Application" ou "Run 'Program.main()'").
